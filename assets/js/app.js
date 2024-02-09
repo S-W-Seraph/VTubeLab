@@ -305,7 +305,7 @@ defaultCheckboxes.forEach(item => {
         } else {
             if (this.checked) {
                 if (checkedDefaultCheckboxes.length === 1) {
-                    overlayPrice += 10000;
+                    overlayPrice += 6000;
                 } else {
                     overlayPrice += 6000;
                 }
@@ -604,7 +604,7 @@ modelActionsItems.forEach(item => {
         const modelActionItem3 = document.getElementById('modelActionItem3');
 
         if (modelActionItem1.classList.contains('active')) {
-            modelPrice = 6000;
+            modelPrice = 5000;
 
             totalPriceSpan.innerText =
                 overlayPrice +
