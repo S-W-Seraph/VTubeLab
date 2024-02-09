@@ -70,7 +70,7 @@ toggleCheckboxes.forEach(item => {
     item.addEventListener('change', function () {
         if (this.id === 'checkbox-toggle-1') {
             if (this.checked) {
-                overlayPrice += 5000;
+                overlayPrice += 6000;
 
                 function generateRandomNumber() {
                     var minm = 100000;
@@ -237,7 +237,7 @@ toggleCheckboxes.forEach(item => {
 
         if (this.id === 'checkbox-toggle-6') {
             if (this.checked) {
-                rigPrice += 5000;
+                rigPrice += 15000;
 
                 function generateRandomNumber() {
                     var minm = 100000;
@@ -254,7 +254,7 @@ toggleCheckboxes.forEach(item => {
                 basket[5] = rigOrder;
                 localStorage.setItem('basket', JSON.stringify(basket));
             } else {
-                rigPrice -= 5000;
+                rigPrice -= 15000;
 
                 function generateRandomNumber() {
                     var minm = 100000;
@@ -298,19 +298,19 @@ defaultCheckboxes.forEach(item => {
 
         if (document.getElementById('checkbox-toggle-1').checked === true) {
             if (this.checked) {
-                overlayPrice += 5000;
+                overlayPrice += 6000;
             } else {
-                overlayPrice -= 5000;
+                overlayPrice -= 6000;
             }
         } else {
             if (this.checked) {
                 if (checkedDefaultCheckboxes.length === 1) {
                     overlayPrice += 10000;
                 } else {
-                    overlayPrice += 5000;
+                    overlayPrice += 6000;
                 }
             } else {
-                overlayPrice -= 5000;
+                overlayPrice -=6000;
             }
         }
 
@@ -604,7 +604,7 @@ modelActionsItems.forEach(item => {
         const modelActionItem3 = document.getElementById('modelActionItem3');
 
         if (modelActionItem1.classList.contains('active')) {
-            modelPrice = 5000;
+            modelPrice = 6000;
 
             totalPriceSpan.innerText =
                 overlayPrice +
